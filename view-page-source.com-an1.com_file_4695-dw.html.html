@@ -121,7 +121,7 @@
   <div class="background"></div>
   
   <script>
-  function countdown(sec) {      sec--;  if( sec > 0 ) { document.getElementById("download-t").innerHTML = ''+sec+''; window.setTimeout("countdown("+sec+")", 1500);  } else {        document.getElementById("download-t").style.display = 'none';        document.getElementById("fast-dld").style.display = 'inline';       }       }       function pro-dl-button(sec) {   sec--;  if ( sec > 0 ) {        document.getElementById("fast-dld").style.display = 'none'; document.getElementById("last-dld").style.display = 'inline';     window.setTimeout("change_button("+sec+")", 1500);      } else {        document.getElementById("last-dld").style.display = 'none';       document.getElementById("fast-dld").style.display = 'inline';       }       };     countdown(8); 
+  function countdown(sec) {      sec--;  if( sec > 0 ) { document.getElementById("download-t").innerHTML = ''+sec+''; window.setTimeout("countdown("+sec+")", 1500);  } else {        document.getElementById("download-t").style.display = 'none';        document.getElementById("fast-dld").style.display = 'inline';       }       }       function change_button(sec) {   sec--;  if ( sec > 0 ) {        document.getElementById("fast-dld").style.display = 'none'; document.getElementById("last-dld").style.display = 'inline';     window.setTimeout("change_button("+sec+")", 1500);      } else {        document.getElementById("last-dld").style.display = 'none';       document.getElementById("fast-dld").style.display = 'inline';       }       };     countdown(8); 
   </script> 
   
    
