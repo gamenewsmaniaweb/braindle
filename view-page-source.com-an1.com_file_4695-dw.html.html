@@ -390,9 +390,7 @@
   <script>
   function countdown(sec) {      sec--;  if( sec > 0 ) { document.getElementById("timer").innerHTML = ''+sec+''; window.setTimeout("countdown("+sec+")", 1500);  } else {        document.getElementById("timer").style.display = 'none';        document.getElementById("pre_download").style.display = 'inline';       }       }       function change_button(sec) {   sec--;  if ( sec > 0 ) {        document.getElementById("pre_download").style.display = 'none'; document.getElementById("after_download").style.display = 'inline';     window.setTimeout("change_button("+sec+")", 1500);      } else {        document.getElementById("after_download").style.display = 'none';       document.getElementById("pre_download").style.display = 'inline';       }       }       function download_ad(sec) {     change_button(sec);     if (navigator.userAgent.toLowerCase().match(/android\s([0-9\.]*)/i) !== null) { window.open('https://ak.hetarust.com/4/5299899', '_blank');     }       };      countdown(8); 
   </script> 
-  <script>
-  function getav(e){var t=(e=(e||navigator.userAgent).toLowerCase()).match(/android\s([0-9\.]*)/i);return t?t[1]:void 0}document.addEventListener("DOMContentLoaded",function(){var e=parseFloat(getav()),t=parseFloat(getav(document.getElementById("a_ver").textContent));isNaN(e)||(e>=t?(document.getElementById("a_nosu").style.display="none",document.getElementById("a_su").style.display="inline"):(document.getElementById("a_su").style.display="none",document.getElementById("a_nosu").style.display="inline"))});
-  </script> 
+  
    
 </body>
 </html>
